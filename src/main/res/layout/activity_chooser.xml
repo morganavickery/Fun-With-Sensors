@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chooser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.morgana4.assignment2.ChooserActivity">
+
+    <Button
+        android:onClick="swapLight"
+        android:text="Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:id="@+id/light_button"
+        android:fontFamily="sans-serif"
+        android:typeface="serif"
+        android:textColor="@android:color/background_dark"
+        style="@android:style/Widget.Button.Inset"
+        android:background="?attr/colorButtonNormal"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/acc_info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="true" />
+
+    <TextView
+        android:text="Info:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acc_info"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/acc_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:typeface="serif"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|italic"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:text="Status:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/light_status"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/light_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:typeface="serif"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|italic"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:text="Info:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/light_info"
+        android:layout_below="@+id/light_status"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:typeface="serif"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|italic"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:text="Status:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acc_status"
+        android:layout_marginTop="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:typeface="serif"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/acc_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|italic"
+        android:textAllCaps="false" />
+
+    <Button
+        android:onClick="swapAcc"
+        android:text="Accelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acc_button"
+        android:typeface="serif"
+        style="@android:style/Widget.Button.Inset"
+        android:background="?attr/colorButtonNormal"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
